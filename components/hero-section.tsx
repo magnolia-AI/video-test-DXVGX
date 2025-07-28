@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
+import { ParticleBackground } from '@/components/particle-background';
 
 export function HeroSection() {
   const router = useRouter();
@@ -12,18 +13,9 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background video */}
+      {/* Particle background */}
       <div className="absolute inset-0 z-0">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source src="https://storage.googleapis.com/magnolia-storage-dev-test-123/videos/ADBS3gmlO5/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <ParticleBackground />
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-background/50"></div>
       </div>
 
@@ -74,3 +66,4 @@ export function HeroSection() {
     </section>
   );
 }
+
