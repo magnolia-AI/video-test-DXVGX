@@ -7,12 +7,14 @@ import { PricingSection } from '@/components/pricing-section';
 import { FAQSection } from '@/components/faq-section';
 import { CTASection } from '@/components/cta-section';
 import { Footer } from '@/components/footer';
+import { DemoSection } from '@/components/demo-section';
 
 export default function Home() {
   return (
     <div className="min-h-full">
       <HeroSection />
       <FeaturesSection />
+      <DemoSection />
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
@@ -21,3 +23,4 @@ export default function Home() {
     </div>
   );
 }
+

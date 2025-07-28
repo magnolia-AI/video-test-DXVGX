@@ -28,6 +28,9 @@ export function Navbar() {
             <a href="#pricing" className="transition-colors hover:text-foreground/80">
               Pricing
             </a>
+            <a href="/dashboard" className="transition-colors hover:text-foreground/80">
+              Dashboard
+            </a>
             <a href="#" className="transition-colors hover:text-foreground/80">
               Documentation
             </a>
@@ -50,3 +53,4 @@ export function Navbar() {
     </header>
   );
 }
+
